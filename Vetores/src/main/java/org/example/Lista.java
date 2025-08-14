@@ -9,10 +9,18 @@ public class Lista {
         Scanner sc = new Scanner(System.in);
         ArrayList <Double> notas = new ArrayList<>();
         String resposta;
-
+        double notaInformada;
         do {
-            System.out.println("Digite uma nota: ");
-            notas.add(sc.nextDouble());
+
+            do {
+                System.out.println("Digite uma nota: ");
+                notaInformada = sc.nextDouble();
+                if (notaInformada < 0 || notaInformada >10){
+                    System.out.println("Digite corretamente, imbecil!");
+                }
+            }while ( notaInformada < 0 || notaInformada >10);
+            notas.add(notaInformada);
+
             System.out.println("Deseja inserir mais uma nota? ");
             System.out.println("\nPressione a tecla N para sair.");
             resposta = sc.next();
