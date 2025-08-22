@@ -1,4 +1,4 @@
-package org.example;
+package atividade1;
 
 public class Endereco {
     private String logradouro;

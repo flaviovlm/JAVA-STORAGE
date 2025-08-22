@@ -1,14 +1,14 @@
-package org.example;
+package atividade2;
 
-public class Cliente {
+public class Pet {
     private String nome;
     private int idade;
-    private Endereco endereco;
+    private String raca;
 
-    public Cliente(String nome, int idade, Endereco endereco) {
+    public Pet(String nome, int idade, String raca) {
         this.nome = nome;
         this.idade = idade;
-        this.endereco = endereco;
+        this.raca = raca;
     }
 
     public String getNome() {
@@ -27,20 +27,20 @@ public class Cliente {
         this.idade = idade;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public String getRaca() {
+        return raca;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setRaca(String raca) {
+        this.raca = raca;
     }
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Pet{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
-                ", endereco=" + endereco +
+                ", raca='" + raca + '\'' +
                 '}';
     }
 }
