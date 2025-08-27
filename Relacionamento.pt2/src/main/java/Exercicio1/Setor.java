@@ -1,4 +1,4 @@
-package org.example;
+package Exercicio1;
 
 public enum Setor {
     FINANCEIRO("Financeiro"),

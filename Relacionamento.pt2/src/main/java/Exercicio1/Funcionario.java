@@ -1,4 +1,4 @@
-package org.example;
+package Exercicio1;
 
 public class Funcionario {
     private int id;

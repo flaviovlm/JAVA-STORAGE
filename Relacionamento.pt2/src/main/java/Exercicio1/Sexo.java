@@ -1,4 +1,4 @@
-package org.example;
+package Exercicio1;
 
 public enum Sexo {
     MASCULINO("Masculino", 'M'),
