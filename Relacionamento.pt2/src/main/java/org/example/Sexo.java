@@ -1,0 +1,21 @@
+package org.example;
+
+public enum Sexo {
+    MASCULINO("Masculino", 'M'),
+    FEMININO("Feminino", 'F');
+    private String nome;
+    private char caractere;
+
+    Sexo(String nome, char caractere) {
+        this.nome = nome;
+        this.caractere = caractere;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public char getCaractere() {
+        return caractere;
+    }
+}
