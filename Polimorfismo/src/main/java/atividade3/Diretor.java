@@ -27,8 +27,8 @@ public class Diretor extends Funcionario implements Contratacao {
                 "PREMIO=" + PREMIO +
                 ", nome='" + nome + '\'' +
                 ", dataNascimento='" + dataNascimento + '\'' +
-                ", sexo=" + sexo +
-                ", setor=" + setor +
+                ", sexo=" + sexo.getNome() +
+                ", setor=" + setor.getNome() +
                 ", salarioBase=" + salarioBase +
                 ", salarioFinal=" + this.getSalarioFinal()+
                 '}';
