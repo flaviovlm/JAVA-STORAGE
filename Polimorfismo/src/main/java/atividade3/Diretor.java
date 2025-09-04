@@ -30,11 +30,12 @@ public class Diretor extends Funcionario implements Contratacao {
                 ", sexo=" + sexo +
                 ", setor=" + setor +
                 ", salarioBase=" + salarioBase +
+                ", salarioFinal=" + this.getSalarioFinal()+
                 '}';
     }
 
     @Override
     public double getSalarioFinal() {
-        return salarioBase + (salarioBase * getPREMIO());
+        return super.salarioBase + (super.salarioBase * this.PREMIO);
     }
 }

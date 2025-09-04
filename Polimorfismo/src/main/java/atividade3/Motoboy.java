@@ -26,11 +26,12 @@ public class Motoboy extends Funcionario {
                 ", sexo=" + sexo +
                 ", setor=" + setor +
                 ", salarioBase=" + salarioBase +
+                ", salarioFinal=" + this.getSalarioFinal()+
                 '}';
     }
 
     @Override
     public double getSalarioFinal() {
-        return getSalarioBase();
+        return super.salarioBase;
     }
 }
