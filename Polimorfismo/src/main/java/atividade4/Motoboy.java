@@ -30,6 +30,7 @@ public class Motoboy extends Funcionario {
                 ", cpf='" + cpf + '\'' +
                 ", dataNascimento='" + dataNascimento + '\'' +
                 ", salarioBase=" + salarioBase +
+                ", salarioFinal=" + this.obterSalarioFinal() +
                 '}';
     }
 }
