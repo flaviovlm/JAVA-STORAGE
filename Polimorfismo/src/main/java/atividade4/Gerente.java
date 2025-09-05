@@ -18,7 +18,7 @@ public class Gerente extends CargoDeConfianca implements Contratacao {
 
     @Override
     public double obterSalarioFinal() {
-        return super.salarioBase + (super.salarioBase * Bonificacao.GERENTE.getValor());
+        return super.salarioBase * Bonificacao.GERENTE.getValor();
     }
 
     @Override
