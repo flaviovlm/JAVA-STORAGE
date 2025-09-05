@@ -2,8 +2,8 @@ package atividade4;
 
 public class Gerente extends CargoDeConfianca implements Contratacao {
 
-    public Gerente(String nome, String cpf, String dataNascimento, double salarioBase, Bonificacao bonificacao) {
-        super(nome, cpf, dataNascimento, salarioBase, bonificacao);
+    public Gerente(String nome, String cpf, String dataNascimento, double salarioBase) {
+        super(nome, cpf, dataNascimento, salarioBase, Bonificacao.GERENTE);
     }
 
     @Override
@@ -18,7 +18,7 @@ public class Gerente extends CargoDeConfianca implements Contratacao {
 
     @Override
     public double obterSalarioFinal() {
-        return super.salarioBase * Bonificacao.GERENTE.getValor();
+        return super.salarioBase * super.bonificacao.getValor();
     }
 
     @Override
