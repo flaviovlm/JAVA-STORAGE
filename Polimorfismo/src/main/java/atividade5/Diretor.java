@@ -11,7 +11,7 @@ public class Diretor extends CargoDeConfianca implements Contratacao{
 
     @Override
     public double getSalarioFinal() {
-        return super.salarioBase * super.bonificacao.getValor() * this.PREMIO;
+        return (super.salarioBase * super.bonificacao.getValor()) * this.PREMIO;
     }
 
     @Override
